@@ -25,3 +25,7 @@ Key highlights:
 - Cross-device responsive design  
 - Modular, reusable frontend components  
 
+## Installation
+1. Clone the repo:  
+```bash
+git clone https://github.com/madiha-404/RealTimeCryptoDashboard.git
