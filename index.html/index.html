@@ -1,0 +1,343 @@
+<!doctype html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Finance | Real-Time Trading with WebGL Visualization</title>
+  <meta name="description" content="Trade at the speed of light with Nova Finance. Experience sub-millisecond updates and immersive WebGL data visualization for professional traders.">
+  <link rel="canonical" href="https://novafinance.com">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nova Finance | Real-Time Trading Platform">
+  <meta property="og:description" content="Sub-millisecond execution and next-gen WebGL charts. The future of trading is here.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://novafinance.com">
+  <meta property="og:image" content="https://novafinance.com/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nova Finance | Real-Time Trading Platform">
+  <meta name="twitter:description" content="Sub-millisecond execution and next-gen WebGL charts. The future of trading is here.">
+  <meta name="twitter:image" content="https://novafinance.com/twitter-image.jpg">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&#x26;family=JetBrains+Mono:wght@400;700&#x26;display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
+          N
+        </div>
+        <span class="text-xl font-bold text-white tracking-tight">Nova<span class="text-cyan-400">Finance</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Features</a>
+        <a href="#technology" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Technology</a>
+        <a href="#markets" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Markets</a>
+        <a href="#pricing" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Pricing</a>
+      </nav>
+
+      <!-- CTA & Mobile Menu -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="hidden md:inline-flex text-sm font-medium text-slate-300 hover:text-white transition-colors">Log in</a>
+        <a href="#" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-slate-950 transition-all bg-cyan-400 rounded-full hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-slate-900">
+          Start Trading
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-16"><section class="relative bg-slate-950 pt-24 pb-12 lg:pt-32 lg:pb-24 overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950 pointer-events-none"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800 text-blue-300 text-sm font-medium mb-6">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+        </span>
+        Live: Sub-millisecond Updates Active
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+        Trade at the 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Speed of Light</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
+        Experience the next generation of trading with Nova Finance. Real-time WebGL data visualization meets institutional-grade execution speed.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+          Start Trading Now
+        </a>
+        <a href="#" class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition-all">
+          View Live Demo
+        </a>
+      </div>
+    </div>
+    
+    <div class="relative max-w-6xl mx-auto mt-16">
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-2xl blur opacity-20"></div>
+      <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+        <img data-ai="generate" data-slot="hero-webgl-dashboard" data-prompt="Futuristic dark mode trading dashboard interface with glowing neon charts, 3D WebGL data visualization of market depth, floating numbers, high tech aesthetic" data-ar="16:9" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/78605463-596f-4eaa-ae26-ea47cd4df97f/78605463-596f-4eaa-ae26-ea47cd4df97f/hero/hero-webgl-dashboard-6d11dbff8f7047a990bb2b84f5188711.png" alt="Nova Finance WebGL Dashboard" width="1200" height="675" class="w-full h-auto object-cover" loading="eager">
+      </div>
+    </div>
+  </div>
+</section><section class="bg-slate-950 py-12 border-y border-slate-900">
+  <div class="container mx-auto px-4">
+    <p class="text-center text-slate-500 text-sm font-medium uppercase tracking-wider mb-8">
+      Trusted by Leading Liquidity Providers &#x26; Exchanges
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+      <!-- Mock Logos using text for generic representation -->
+      <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"></path></svg>
+        <span>NEXUS</span>
+      </div>
+      <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <svg class="w-8 h-8 text-emerald-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
+        <span>QUANTUM</span>
+      </div>
+      <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"></rect></svg>
+        <span>BLOCKFLOW</span>
+      </div>
+      <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <svg class="w-8 h-8 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"></path></svg>
+        <span>APEX</span>
+      </div>
+      <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <svg class="w-8 h-8 text-cyan-500" fill="currentColor" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="4"></path></svg>
+        <span>STRATA</span>
+      </div>
+    </div>
+  </div>
+</section><section class="bg-slate-950 py-24">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Engineered for Extreme Performance</h2>
+      <p class="text-slate-400 text-lg">
+        Built on a proprietary engine that handles millions of operations per second. Nova Finance isn't just fast; it's instantaneous.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-colors">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="feature-latency" data-prompt="Abstract visualization of high speed data transfer, fiber optic light streaks, motion blur, blue and cyan neon colors, dark background" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/78605463-596f-4eaa-ae26-ea47cd4df97f/78605463-596f-4eaa-ae26-ea47cd4df97f/features_grid/feature-latency-47549c8409dd48298a714a2562f47399.png" alt="Low Latency Execution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Ultra-Low Latency</h3>
+          <p class="text-slate-400">
+            Execute orders in microseconds. Our direct market access ensures you never miss a price movement due to lag.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="feature-security" data-prompt="Cybersecurity concept, digital shield lock, glowing green binary code, secure vault, dark tech background" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/78605463-596f-4eaa-ae26-ea47cd4df97f/78605463-596f-4eaa-ae26-ea47cd4df97f/features_grid/feature-security-350eb4f56d3645c4b180861e5ddc393e.png" alt="Bank-Grade Security" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-emerald-900/50 rounded-lg flex items-center justify-center mb-4 text-emerald-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="m9 12 2 2 4-4"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Bank-Grade Security</h3>
+          <p class="text-slate-400">
+            Your assets are protected by multi-layer encryption and cold storage protocols. Security is our foundation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-colors">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img data-ai="generate" data-slot="feature-api" data-prompt="API connectivity concept, network nodes connecting, digital interface lines, purple and violet glow, server rack abstract" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/78605463-596f-4eaa-ae26-ea47cd4df97f/78605463-596f-4eaa-ae26-ea47cd4df97f/features_grid/feature-api-c53be217951b491d90e848514faf6458.png" alt="Powerful API Access" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center mb-4 text-purple-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Developer API</h3>
+          <p class="text-slate-400">
+            Build custom bots and algorithmic strategies with our robust WebSocket and REST APIs. Full documentation included.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="webgl_showcase" class="py-20 bg-gray-900 text-white overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-900/30 rounded-full">
+          Next-Gen Visualization
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+          Visualize Market Depth in <span class="text-blue-500">Real-Time 3D</span>
+        </h2>
+        <p class="text-gray-400 text-lg mb-8">
+          Move beyond flat charts. Nova Finance leverages WebGL acceleration to render millions of data points instantly. Spot liquidity clusters, visualize order flow in three dimensions, and react to market shifts before they hit the tape.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-300">GPU-accelerated rendering for zero-lag interactions</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-300">Interactive volumetric heatmaps for order book analysis</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-300">Customizable 3D workspaces tailored to your strategy</span>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:w-1/2 w-full">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-800 group">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60 z-10"></div>
+          <img data-ai="generate" data-slot="webgl-chart-demo" data-prompt="Futuristic 3D financial data visualization interface on a dark screen, glowing neon lines representing stock market trends, volumetric heatmaps, depth of field, high tech trading dashboard" data-ar="16:9" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/78605463-596f-4eaa-ae26-ea47cd4df97f/78605463-596f-4eaa-ae26-ea47cd4df97f/webgl_showcase/webgl-chart-demo-53e03cf5c02e4fe493948aab27253f78.png" alt="WebGL 3D Trading Interface" width="1200" height="675" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" fetchpriority="auto">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="performance_stats" class="py-20 bg-black text-white border-t border-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Engineered for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Sub-Millisecond</span> Precision</h2>
+      <p class="text-gray-400 text-lg">
+        In high-frequency trading, every microsecond counts. Our infrastructure is built to ensure you never miss a tick.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-8 rounded-2xl bg-gray-900/50 border border-gray-800 hover:border-blue-500/50 transition-colors duration-300">
+        <div class="text-5xl font-extrabold text-white mb-2 tracking-tight">&#x3C;1<span class="text-blue-500 text-3xl">ms</span></div>
+        <div class="text-gray-400 font-medium uppercase tracking-wide text-sm">Global Latency</div>
+      </div>
+      <div class="p-8 rounded-2xl bg-gray-900/50 border border-gray-800 hover:border-blue-500/50 transition-colors duration-300">
+        <div class="text-5xl font-extrabold text-white mb-2 tracking-tight">99.99<span class="text-blue-500 text-3xl">%</span></div>
+        <div class="text-gray-400 font-medium uppercase tracking-wide text-sm">System Uptime</div>
+      </div>
+      <div class="p-8 rounded-2xl bg-gray-900/50 border border-gray-800 hover:border-blue-500/50 transition-colors duration-300">
+        <div class="text-5xl font-extrabold text-white mb-2 tracking-tight">5M<span class="text-blue-500 text-3xl">+</span></div>
+        <div class="text-gray-400 font-medium uppercase tracking-wide text-sm">Transactions / Sec</div>
+      </div>
+    </div>
+  </div>
+</section><section id="cta_footer" class="py-24 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20"></div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Ready to Trade at Light Speed?</h2>
+    <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+      Join the platform that powers the world's most sophisticated traders. Experience the Nova Finance difference today.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        Open Free Account
+      </a>
+      <a href="#" class="px-8 py-4 bg-transparent border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
+        Contact Enterprise Sales
+      </a>
+    </div>
+    <p class="mt-8 text-sm text-blue-200/60">
+      No credit card required for basic accounts. Instant API access available.
+    </p>
+  </div>
+</section></main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+        <div class="col-span-2 lg:col-span-2">
+          <a href="#" class="flex items-center gap-2 mb-4">
+            <div class="w-6 h-6 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white text-xs font-bold">
+              N
+            </div>
+            <span class="text-lg font-bold text-white">Nova<span class="text-cyan-400">Finance</span></span>
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+            The world's fastest trading platform featuring sub-millisecond execution and immersive WebGL data visualization.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Platform</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Desktop Terminal</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Mobile App</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">API Documentation</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">System Status</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">About Us</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Careers</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Press</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Risk Disclosure</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-500 text-sm">© 2023 Nova Finance. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="text-slate-500 hover:text-white transition-colors" aria-label="Twitter">
+            <i data-lucide="twitter" class="w-5 h-5"></i>
+          </a>
+          <a href="#" class="text-slate-500 hover:text-white transition-colors" aria-label="GitHub">
+            <i data-lucide="github" class="w-5 h-5"></i>
+          </a>
+          <a href="#" class="text-slate-500 hover:text-white transition-colors" aria-label="LinkedIn">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body></html>
